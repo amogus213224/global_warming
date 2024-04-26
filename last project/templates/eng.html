@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/style.css" />
+    <title>Global warming</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="header__nav main-nav">
+            <img class="project__img" src="../static/img/free-png.ru-826.png" alt="project" width="100">
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#информация">general information</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#причины">causes</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#методы">methods of struggle</a>
+          </li>
+        </ul>
+      </nav>
+      <ul>
+        <h1 class="header">Global warming</h1>
+      </ul>
+    </header>
+    <section class="main__about about" id="информация">
+      <h2 class="about__title">WHAT IS GLOBAL WARMING?</h2>
+      <div>
+        <p>
+            Average climate indicators are constantly changing. It is believed that the Earth has already warmed
+            by 1.2 degrees due to industrial emissions, also called greenhouse gases.
+            The countdown starts from 1880, that is, before the industrial revolution.
+            And although it seems that 1.2 degrees is not much, scientists said four years ago,
+            that an increase in temperature of 1.1 degrees due to additional heat
+            and energy equal to four Hiroshima bomb explosions per second.
+            Since the 1980s, each decade has been warmer than the previous one.
+            In general, scientists say that an increase in the planet’s temperature to 2 degrees will lead to disaster:
+            There will be problems with agriculture, a number of animals will die, in general, warming will affect all ecosystems.
+            Weather anomalies will worsen in different parts of the planet, which will also affect people's lives. Scientists expect less rain in some parts of the world
+            and in another there will be more of them, in the third part there will be the same amount of precipitation, but it will be stronger and shorter-lived. Such anomalies will cause drought and floods.
+        </p>
+        <img src="../static/img/tmb_44855_8830.jpg" width="700">
+      </div>
+    </section>
+    <section class="main__about about" id="причины">
+      <h2 class="about__title">WHAT ARE THE CAUSES OF GLOBAL WARMING?</h2>
+      <div>
+        <p>
+            Greenhouse gases existed before industry. These are volcanic eruptions, forest fires and even
+            breathing of living organisms, that is, this is a normal process. On the other hand, now the impact of industry
+            so great that the process went tens of times faster.
+            Reasons for the increase in emissions:
+            Combustion of coal, oil and gas
+            Deforestation
+            Increase in livestock production
+            Nitrous oxide emissions from fertilizers
+            Emission of fluorinated gases from equipment and products
+            According to Carbon Majors, 100 companies were responsible for 71% of emissions
+            from 1988 to 2015, The Guardian reports.
+        </p>
+        <p>Even more information about global warming in this video:</p>
+        <video controls width="1000">
+          <source src="../static/video/Causes and Effects of Climate Change _ National Geographic.mp4" type="video/webm" />
+        
+          <source src="../static/video/Causes and Effects of Climate Change _ National Geographic.mp4" type="video/mp4" />
+      </div>
+    </section>
+    <section class="main__about about" id="методы">
+      <h2 class="about__title">WHAT SHOULD WE DO ABOUT THIS?</h2>
+      <div>
+        <p>
+            Different experts offer different options for greening: switching from cars to bicycles,
+            stop using disposable tableware, eating meat and giving birth. The last one is no joke.
+            Scientists really believe that reducing childbearing can be one of the effective measures.
+            For example, a study at Oregon State University found that every child
+            born in the USA will add 9.4 tons to harmful emissions into the atmosphere. However, without children on the planet in
+            at some point it will become empty, so UN environmental experts suggest continuing to give birth,
+            But:
+            fly less
+            reduce waste,
+            isolate your home,
+            travel on foot or by bicycle,
+            there are seasonal products,
+            turn off electrical appliances,
+            wear clothes until the last moment,
+            talk about greening with friends and at work,
+            switch to renewable energy sources,
+            use cashless payment,
+            eat more plant foods,
+            repair things and give them a “second life”. The general tendency of all these tips is to use as much energy and resources as possible, and if everyone does this, then we can make a tangible contribution to the ecology of the earth.
+            Let's save our planet together!
+        </p>
+        <img src="../static/img/1688607033_kartin-papik-pro-p-kartinki-ruki-derzhat-planetu-66.jpg" width="700">
+      </div>
+    </section>
+      <section class="main__skills skills">
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <span class="skill__info">русская версия</span>
+              <input class="skill__button" type="submit" name="button_eng" value="переключить на русскую версию">
+            </li>
+          </ul>
+        </form>
+        {% if button_eng%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="../static/img/558593.png" alt="project" width="50">
+              <a class="project__link" href="index.html">Русский</a>
+          </div>
+        {% endif %}
+      </section>
+      <section class="main__feedback feedback" id="feedback">
+        <h2 class="feedback__title">FEEDBACK</h2>
+        <form action="" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Enter E-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Comment"></textarea>
+          </label>
+          <button class="form__button" type="submit">SEND</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <div id="sus" class="imgs">
+          <img class="img12" src="../static/img/discord.png">
+          <img class="img12" src="../static/img/telega.png">
+          <img class="img12" src="../static/img/twitch.png">
+          <img class="img12" src="../static/img/vk.png">
+      </div>
+      <ul class="texts">
+        <li class="left"><a href="https://discord.gg/bSFDVuAA">discord</a></li>
+        <li class="left"><a href="https://t.me/yas_iam64">telegram</a></li>
+        <li class="right"><a href="https://www.twitch.tv/jotaro3351">twitch</a></li>
+        <li class="right"><a href="https://vk.com/ne__impostor">Vkontakte</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
